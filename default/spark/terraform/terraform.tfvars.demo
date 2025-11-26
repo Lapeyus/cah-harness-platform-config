@@ -1,0 +1,132 @@
+# ==============================================================================
+# Global Configuration
+# ==============================================================================
+
+harness_platform_api_key = ""
+harness_account_id       = ""
+harness_org_id           = ""
+# ==============================================================================
+# Team Configuration
+# ==============================================================================
+
+team_config = {
+  account_id           = ""
+  project_name          = ""
+  apmid                 = ""
+  cost_center           = ""
+  gcp_project_np        = ""
+  gcp_project_pr        = ""
+  gcp_artifacts_project = ""
+}
+
+# ==============================================================================
+# Gradle Services
+# ==============================================================================
+
+gradle_services = {
+  "gradle-poc" = {
+    repo_name          = ""
+    service_ref        = ""
+    language_version   = ""
+    notification_email = ""
+    app_name           = ""
+
+    # Trigger configuration
+    trigger_enabled       = true
+    trigger_type          = ""
+    trigger_auto_abort    = false
+    trigger_branch        = ""
+    trigger_connector_ref = ""
+
+    # Manifest configuration
+    manifest_connector_ref = ""
+    manifest_identifier    = ""
+    manifest_path          = ""
+    manifest_branch        = ""
+    manifest_repo          = ""
+
+    # Artifact configuration
+    artifact_connector_ref = ""
+    artifact_identifier    = ""
+    artifact_project       = ""
+    artifact_package       = ""
+
+    # DR configuration
+    dr_enabled = true
+  }
+
+  "best_app_ever" = {
+    repo_name           = ""
+    service_ref         = ""
+    language_version    = ""
+    notification_email  = ""
+    manifest_identifier = ""
+    manifest_path       = ""
+    manifest_repo       = ""
+    artifact_identifier = ""
+    artifact_project    = ""
+    artifact_package    = ""
+  }
+}
+
+# ==============================================================================
+# DotNet Services
+# ==============================================================================
+
+dotnet_services = {
+  "dotnet-helloworldapi" = {
+    repo_name          = ""
+    service_ref        = ""
+    language_version   = ""
+    notification_email = ""
+    app_name           = ""
+
+    # Trigger configuration - PullRequest close event
+    trigger_enabled       = true
+    trigger_type          = ""
+    trigger_auto_abort    = false
+    trigger_branch        = ""
+    trigger_connector_ref = ""
+
+    # Manifest configuration
+    manifest_connector_ref = ""
+    manifest_identifier    = ""
+    manifest_path          = ""
+    manifest_branch        = ""
+    manifest_repo          = ""
+
+    # Artifact configuration
+    artifact_connector_ref = ""
+    artifact_identifier    = ""
+    artifact_project       = ""
+    artifact_package       = ""
+
+    # DR configuration
+    dr_enabled = true
+  }
+
+  "is_always_dns" = {
+    repo_name           = ""
+    service_ref         = ""
+    language_version    = ""
+    notification_email  = ""
+    manifest_identifier = ""
+    manifest_path       = ""
+    manifest_repo       = ""
+    artifact_identifier = ""
+    artifact_project    = ""
+    artifact_package    = ""
+  }
+}
+
+# ==============================================================================
+# Angular Services
+# ==============================================================================
+
+angular_services = {}
+
+# ==============================================================================
+# Python Services
+# ==============================================================================
+
+python_services = {}
